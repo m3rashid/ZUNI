@@ -13,15 +13,15 @@ function App() {
 	return (
 		<>
 			<Router>
-				<Nav/>
+				<Nav />
 				<Switch>
-					<Route path='/' exact component={Home}/>
-					<Route path='/demo' exact component={Examples}/>
-					<Route path='/about' exact component={About}/>
-					<Route path='/auth' exact component={Main}/>
+					<Route path='/' exact component={Home} />
+					<Route path='/demo' exact component={Examples} />
+					<Route path='/about' exact component={About} />
+					<Route path='/auth' exact component={Main} />
 					<Route component={NotFound} />
 				</Switch>
-				<Footer/>
+				<Footer />
 			</Router>
 		</>
 	)

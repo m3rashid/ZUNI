@@ -9,8 +9,8 @@ function Auth(props) {
 	const handleSubmit = e => {
 		e.preventDefault()
 		setAuth(prev => ({ ...prev, username: '' }))
-		
-		if(auth.username !== '') props.submit(auth)
+
+		if (auth.username !== '') props.submit(auth)
 		else alert('Enter a username first')
 	}
 
