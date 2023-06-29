@@ -5,7 +5,7 @@ flask-cors
 gunicorn==20.1.0
 Pillow
 numpy
-torch==1.9.0+cpu
-torchvision==0.10.0+cpu
+torch==1.11.0+cpu
+torchvision==0.12.0+cpu
 facenet-pytorch
 matplotlib
