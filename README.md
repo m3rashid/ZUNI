@@ -27,9 +27,11 @@
 </p>
 
 #### Introduction
+
 In recent times face biometric security systems are rapidly increasing for both web and mobile applications. This has also led to an increase in cyber attacks where attackers use certain presentation attacks and instruments to gain unauthorized access into a user's account. To counter this, we bring before you **Zillion Utility purpose Neural authenticatin Interface** or as we like to call it **ZUNI**. Our interface comes with a face spoof detection system, which can recognize:
+
 - Printed face attack
-- Face being shown on a device's screen 
+- Face being shown on a device's screen
 - Multiple faces
 
 <div align="center">
@@ -41,27 +43,34 @@ In recent times face biometric security systems are rapidly increasing for both 
 In case any one of the above attacks is detected, the system disrupts the login process and the user needs to start again. Since ZUNI captures images in real time, using 3D-Mask Generation techniques will not work hence it renders the deepfake methods useless. ZUNI can be built on top of any face biometric authentication system to detect attacks. For the demonstration purpose, we build ZUNI over a face matcher which returns a User's Registered Name, in case a real user tries to login. In case an attack is detected, the user is returned back to login screen with a warning. We have also added a registration portal, where users can register using their real faces, in case a spoof face is detected during the registration process, the user is returned back to the registration screen with a warning.
 
 #### Running the application
+
 Given the size of model, deploying it on free web services was not possible. So we demonstrate how to deploy the service on a local machine. You can also check how to deploy deep learning models built using PyTorch in this repository [Transfer Learning Model hosted on Heroku using React & Flask](https://github.com/sheikhazhanmohammed/Transfer-Learning-Model-hosted-on-Heroku-using-React-Flask). To reproduce this respository's result on a local machine, follow the given instructions:
+
 ```
-python3 -m venv pytorch-application
-source pytorch-application/bin/activate
+python3 -m venv zuni
+source zuni/bin/activate
 git clone https://github.com/sheikhazhanmohammed/ZUNI
 cd ZUNI
 sudo pip install -r requirements.txt
 python3 app.py
 ```
+
 The above set of commands initiates the Flask application. We now need to initiate the React Frontend, make sure you have node installed on your local machine before proceeding. To do this, open a new terminal in the ZUNI folder, and follow these instructions:
+
 ```
 cd react-frontend
 npm i
 npm start
 ```
+
 This will open a browser window in your default web browser. You can view a sample demonstration in the Demo tab.
 
 #### Credits
+
 We would like to thank the Meta Platforms Inc. for their open source libraries PyTorch and React which helped us to create this project. We would also love to thank Tim Esler and his team for open-sourcing the facenet-pytorch repository which helped us to get a facial matcher and facial extraction neural network.
 
 #### Appendix
+
 - [Link to Colab Notebook](https://colab.research.google.com/drive/1MQurhePx6H_nC3w071X9GRDMfpPUPfJ6?usp=sharing)
 - [Link to Trained Model pt file](https://drive.google.com/file/d/13daEooUmdQ5v2kFojwQv7n81hBO6SjyB/view?usp=sharing)
 - [Link to Complete Dataset](https://drive.google.com/drive/folders/1p8iXUQmCifrnoAWexpvOsxxUZe3brz2B?usp=sharing)
