@@ -15,7 +15,6 @@ react-frontend/build
 
 # misc
 temp.jpg
-.vscode
 .DS_Store
 .env.local
 .env.development.local
