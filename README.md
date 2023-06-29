@@ -7,9 +7,6 @@
         <img alt="Build" src="https://img.shields.io/badge/python-3%2B-brightgreen?logo=Python">
     </a>
     <a href="https://circleci.com/gh/huggingface/transformers">
-        <img alt="Build" src="https://img.shields.io/badge/git-2.29.2-brightgreen?logo=git">
-    </a>
-    <a href="https://circleci.com/gh/huggingface/transformers">
         <img alt="Heroku" src="http://img.shields.io/static/v1?label=Pytorch&message=1.6.0&color=brightgreen&logo=Pytorch">
     </a>
     <a href="https://circleci.com/gh/huggingface/transformers">
@@ -17,12 +14,6 @@
     </a>
  <a href="https://circleci.com/gh/huggingface/transformers">
         <img alt="Build" src="https://img.shields.io/badge/React-17.0.1-brightgreen?logo=React">
-    </a>
-    <a href="https://circleci.com/gh/huggingface/transformers">
-        <img alt="Heroku" src="http://img.shields.io/static/v1?label=react-router-dom&message=5.2.0&color=brightgreen&logo=ReactRouter">
-    </a>
-    <a href="https://circleci.com/gh/huggingface/transformers">
-        <img alt="Heroku" src="http://img.shields.io/static/v1?label=React-Bootstrap&message=1.4.0&color=brightgreen&logo=Bootstrap">
     </a>
 </p>
 
@@ -49,7 +40,7 @@ Given the size of model, deploying it on free web services was not possible. So 
 ```
 python3 -m venv zuni
 source zuni/bin/activate
-git clone https://github.com/sheikhazhanmohammed/ZUNI
+git clone https://github.com/m3rashid/ZUNI
 cd ZUNI
 sudo pip install -r requirements.txt
 python3 app.py
